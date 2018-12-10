@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  
+</head>
+<body>
+
+
+
+
+<main id= "app">
+
+    
+<div id="menuToggle">
+   
+<header class="header">
+  <a href="#">&nbsp&nbsp<img src="images/mylogo.png" alt="my logo"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">My Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+ 
+</header>
+
+
+
+<section id="portfolio" ><h1 hidden="bigportfolio"></h1>
+
+		<div class="row">
+			<div class=" large-5 large-offset-3 small-9 small-offset-1 medium-9 offset-1  columns">
+
+
+		<div id="para">
+  {{ aboutme[0].text }}
+</div>
+		</div>
+	</div>
+  
+
+
+    <div class="row ">
+      <div id="social"> 
+      <div class="large-9 medium-9 medium-offset-1 small-11   columns">
+  <a href="http://www.facebook.com"><img src="images/facebook.png" alt="facebook" width="50" height="50"></a>
+           
+        <a href="http://www.twitter.com"><img src="images/twitter.png" alt="twitter" width="50" height="50"></a>
+        
+        
+        <a href="http://www.Instagram.com"><img src="images/instagram.png" alt="instagram" width="50" height="50"></a>
+       </div>
+
+
+      
+</div>
+</div>
+
+</section>
+	
+
+
+
+
+
+
+  <div id="about">
+
+   <div id="service">
+  <div class="container">
+    <div class="row">
+      <div class="large-12 columns">
+        <h2>{{ aboutme[14].text }} </h2>
+      </div>
+  
+         <div class="large-3  show-for-large columns">
+        <div id="circle-img1">
+        <img src="images/largemain.png" alt="main" class="hover-shadow cursor">
+      </div>
+    </div>
+
+
+
+  <div class="medium-4 show-for-medium-only columns">
+        <div id="circle-img3">
+        <img src="images/largemain.png" alt="main"  class="hover-shadow cursor">
+      </div>
+    </div>
+
+<div class="small-12 show-for-small-only columns">
+        <div id="circle-img4">
+        <img src="images/smallmain.png" alt="main"  class="hover-shadow cursor">
+      </div>
+    </div>
+
+    <div class="large-9 medium-8 small-12  columns">
+    <div id="personIntro2">
+    <h1 class="firstName">{{ aboutme[1].text }} </h1>
+</div>
+
+</div>
+
+   <div class="large-9 medium-8 small-12 columns">
+    <h2 class="intro"> {{ aboutme[2].text }} </h2>
+</div>
+
+    
+       </div>
+       </div>
+     </div>
+
+
+
+
+
+<div id="service">
+  <div class="container">
+    <div class="row">
+      <div class="large-12 small-12 medium-7 columns">
+        <h2> {{ aboutme[5].text }} </h2>
+      </div>
+      <div class="large-4 columns">
+       
+        <h3>{{ aboutme[4].text }} </h3>
+        <p>{{ aboutme[7].text }}</p>
+      </div>
+     <div class="large-4 columns">
+       
+        <h3>{{ aboutme[5].text }}</h3>
+        <p>{{ aboutme[9].text }} </p>
+      </div>
+      <div class="large-4 columns">
+        
+        <h3>{{ aboutme[6].text }}</h3>
+        <p>{{ aboutme[10].text }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br/>
+
+
+<div id="work">
+  
+    <div class="row">
+      <div class="large-12 small-12 medium-7 columns">
+        <h2>{{ aboutme[11].text }}</h2>
+      </div>
+         
+
+
+
+
+<div class="large-6 medium-6 small-12 columns">
+
+    <img src="images/proj1.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork1">
+  </div>
+
+
+<!--second pic-->
+
+ 
+
+<div class="large-6 medium-6 small-12 columns">
+    <img src="images/proj2.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork1">
+  </div>
+<!--third pic-->
+
+  
+
+
+<div class="large-6 medium-6 small-12 columns">
+    <img src="images/proj3.png" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork1">
+  </div>
+
+
+<!--lastpic-->
+ 
+
+
+<div class="large-6 medium-6 small-12 columns">
+    <img src="images/proj4.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor" alt="prevwork4">
+  </div>
+
+
+
+<div id="myModal" class="modal">
+  <div class="large-6 medium-8 medium-centered small-12 large-centered columns">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content" >
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/proj1.png" alt="prevwork5" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/proj2.png" alt="prevwork6" >
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/proj3.png" alt="prevwork7">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/proj4.png" alt="prevwork8">
+    </div>
+    
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/proj1.png"  onclick="currentSlide(1)" alt="Project 1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/proj2.png"  onclick="currentSlide(6)" alt="Project 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/proj3.png" onclick="currentSlide(3)" alt="Project 3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/proj4.png"  onclick="currentSlide(4)" alt="project 4">
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<section class="row">
+  <div id="service">
+  <div class="container">
+      <div class="large-12 small-12 medium-7 columns">
+        <h2>{{ aboutme[12].text }}</h2>
+      </div>
+        
+        <div class="small-12 small-offset-1 small-centered large-12 large-centered  columns media-Player">
+          <video src="videos/teaser.mp4" type='video/mp4' width="100%" controls>
+            
+          </video>
+        
+        
+        </div>
+      </section>
+
+      <hr/>
+
+
+
+
+
+
+
+<section class="row">
+  <div id="contact"></div>
+  <h2 class=>{{ aboutme[13].text }}</h2>
+<div class=" small-12 large-12 medium-12 columns ">
+    
+
+
+  <div class="small-12 large-4 medium-4 columns">
+    <label>
+      <input type="text" placeholder="Your Name">
+    </label>
+  </div>
+
+  <div class="small-12 large-4 medium-4 columns">
+    <input type="email" placeholder="Email Address">
+  </div>
+
+
+ <div class="small-12 large-8 medium-8 columns">
+    <textarea  placeholder="comments" required cols="50" rows="8"></textarea>
+  </div>
+
+
+
+<div class="small-12 large-12 columns">
+  <div class="Button">
+  <a role="button" aria-label="submit form" href="#">Submit</a>
+
+   </div>
+</div>
+<a href="https://github.com/shalabimain/shalabi_main_portfolio.git"><img src="images/github.png" alt="facebook" width="100" height="100"></a>
+
+</div>
+</div>
+
+
+</section>
+
+
+<br/>
+<hr/>
+<div class="columns">
+        <label class=" large-centered small-12 text-center large-2 columns mydesign">All Rights Reserved. 2018 </label>
+</div>
+      
+
+
+
+
+
+</main>
+ <script src="js/lightbox.js"></script>
+	<script src="js/main.js"></script>
+  <script src="js/video.js"></script>
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
